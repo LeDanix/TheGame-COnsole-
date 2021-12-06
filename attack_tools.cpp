@@ -2,14 +2,14 @@
 #include <string>
 #include "data.h"
 
-Power_type magic_power {};
+Power_type power_type {};
 Stats stat {};
 
 class Spells{
 public:
     std::string name;
     std::string effect;
-    char damage_iden = magic_power {magic_power}; 
+    char damage_iden; //power_type{weapon_power} || power_type{magic_power}
     char damage_value; 
     char modified_stats_values[9];
 
@@ -34,5 +34,7 @@ public:
         for (char i= 0; i<sizeof(stats);i++)   
             stats[i] = modified_stats_values[i];
         return stats;
+
+        
     }
 };
