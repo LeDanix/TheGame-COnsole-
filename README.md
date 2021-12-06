@@ -1,4 +1,8 @@
 # Game
+A game based on the tipical RPG by turns like Final Fantasy or Pokemon. We will have different characters to select and different weapons and spell to fight.
+
+**The game is under development**
+
 ## Codigo
 * Borrar consola
 https://www.delftstack.com/es/howto/cpp/how-to-clear-console-cpp/
@@ -82,12 +86,21 @@ https://www.delftstack.com/es/howto/cpp/how-to-clear-console-cpp/
 * A dog
 			
 ### Fight
-		The fight is divided into diferent turns. 
-		There are no limit of turns to finish a fight.
-		Each turn, both figthers has to select their attack.
-		When the damage of the attack will be calculated, the life of the enemy decreasse in the same amount of the damage of our attack and viceversa.
-		When the life of any of the characters get '0', this character lose.
-		
+	The fight is divided into diferent turns. 
+	There are no limit of turns to finish a fight.
+	Each turn, both figthers has to select their attack.
+	When the damage of the attack will be calculated, the life of the enemy decreasse in the same amount of the damage of our attack and viceversa.
+	When the life of any of the characters get '0', this character lose.
+	
+
+```
+if random[0-100] < precision
+	damage = MagicPower*SpellsAttack*% + Power*WeaponsAttack*%
+	
+else
+	damage = 0
+```
+
 ### Type table
 	|Atac\Def |Warrior|Wizard|NetRunner|Meca|NatureBoy|
 	|Warrior  |	 x1  |	x2	 |	 x0.5  |x0.5|  x1	  |
